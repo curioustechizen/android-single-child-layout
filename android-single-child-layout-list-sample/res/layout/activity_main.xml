@@ -1,0 +1,62 @@
+<com.github.curioustechizen.scl.SingleChildLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <LinearLayout
+        android:id="@+id/list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Wi-Fi Access Points:" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:choiceMode="none">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="No Access Points Found" 
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wifi" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/list_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</com.github.curioustechizen.scl.SingleChildLayout>
