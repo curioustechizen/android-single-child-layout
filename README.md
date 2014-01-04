@@ -1,3 +1,7 @@
+##Note:
+
+[`ViewAnimator`](http://developer.android.com/reference/android/widget/ViewAnimator.html), which is already included in the Android SDK covers almost all the use cases of this library. You might want to use `ViewAnimator` instead.
+
 android-single-child-layout
 ===========================
 
